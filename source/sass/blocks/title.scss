@@ -1,0 +1,11 @@
+.title {
+  margin: 0 0 40px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 44px;
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}

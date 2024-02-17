@@ -1,0 +1,51 @@
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: $color-violet;
+  padding: 0;
+  border: none;
+  user-select: none;
+  transition: color $trans-default, opacity $trans-default;
+  cursor: pointer;
+  outline: none;
+
+  &__text {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    margin-left: 10px;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &--sm {
+    .btn__text {
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+      margin-left: 5px;
+    }
+
+    .btn__icon {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+
+
+  &:hover {
+    color: $color-default-black;
+    opacity: 0.7;
+  }
+}

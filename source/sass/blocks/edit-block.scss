@@ -1,0 +1,24 @@
+.edit-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  background-color: $color-default-white;
+  display: flex;
+  flex-direction: column;
+  z-index: 20;
+  background-color: $color-default-white;
+
+
+  .btn[data-save],
+  .btn[data-close] {
+    position: absolute;
+    top: 0;
+    right: 30px;
+  }
+
+  .btn[data-close] {
+    right: 0;
+  }
+}

@@ -1,0 +1,61 @@
+.task {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba($color-default-black, 0.2);
+
+  &__check {
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid $color-default-black;
+    border-radius: 4px;
+
+    svg {
+      width: 150%;
+      height: 150%;
+      transform: translate(-10%, -20%);
+      opacity: 0;
+      color: $color-default-black;
+      transition: opacity $trans-default;
+    }
+  }
+
+  &__text {
+    flex: 1;
+  }
+
+  &__name {
+    margin: 0;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &__desc {
+    margin: 0 0 0 15px;
+    font-size: 14px;
+    line-height: 18px;
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  &.is-done {
+    .task__check svg {
+      opacity: 1;
+    }
+
+    .task__text {
+      text-decoration: line-through;
+    }
+  }
+
+  &.is-hidden {
+    display: none;
+  }
+
+  .btn[data-edit] {
+    margin: 2px 5px 0 0;
+
+  }
+}
